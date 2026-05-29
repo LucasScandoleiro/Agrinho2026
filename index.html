@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Agro<span>Sustentável</span></h1>
+            
+            <!-- Menu de Navegação -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio">Início</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <!-- Controles do Topo (Acessibilidade) -->
+            <div class="header-controls">
+                <button id="themeToggle" class="btn-theme" aria-label="Alternar modo escuro">🌓 Modo</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        
+        <!-- Seção Hero (Introdução) -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Agro forte, futuro sustentável</h2>
+                <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+                <button id="ctaBtn" class="btn-primary">Saiba Mais</button>
+            </div>
+        </section>
+
+        <!-- Mensagem Dinâmica via JS -->
+        <div id="dynamicMessage" class="dynamic-message-box hidden"></div>
+
+        <!-- Seção de Pilares (Cards Informativos) -->
+        <section id="pilares" class="pillars-section">
+            <div class="section-title">
+                <h3>Nossos Pilares</h3>
+                <p>Como unimos tecnologia, produção e respeito à natureza.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-img-placeholder font-icon">🚜</div>
+                    <h4>Produção Eficiente</h4>
+                    <p>Uso de tecnologias de precisão para maximizar a colheita reduzindo o desperdício de recursos.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-img-placeholder font-icon">🌱</div>
+                    <h4>Preservação Ativa</h4>
+                    <p>Manejo correto do solo, rotação de culturas e proteção de fontes de água nativas.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-img-placeholder font-icon">☀️</div>
+                    <h4>Energia Limpa</h4>
+                    <p>Implementação de matrizes renováveis, como a solar e biomassa, nas operações agrícolas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Contato e Engajamento -->
+        <section id="contato" class="contact-section">
+            <div class="contact-container">
+                <h3>Faça Parte do Futuro</h3>
+                <p>Inscreva-se para receber relatórios sobre práticas agrícolas sustentáveis.</p>
+                
+                <!-- Formulário com Validação -->
+                <form id="newsletterForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="userName" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="userEmail" placeholder="Seu Melhor E-mail" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Inscrição</button>
+                </form>
+                <div id="formFeedback" class="form-feedback"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroSustentável. Equilíbrio entre produção e meio ambiente.</p>
+    </footer>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
 
